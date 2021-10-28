@@ -1,0 +1,1 @@
+export const multiplicacion = (a, b) => a * b

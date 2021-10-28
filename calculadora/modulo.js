@@ -1,0 +1,1 @@
+export const modulo = (a, b) => a % b

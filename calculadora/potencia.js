@@ -1,0 +1,1 @@
+export const potencia = (a, b) => a ** b
