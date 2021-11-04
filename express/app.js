@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 const PORT = process.env.PORT || 3000
 
-const htmlViews = fs.readdirSync('./view')
+const htmlViews = fs.readdirSync(path.join(__dirname, './DH-Heroes/view'))
 
 app.use(express.static(path.join(__dirname, '/DH-Heroes/public')))
 
@@ -42,6 +42,8 @@ htmlViews.forEach((view) => {
   //   res.sendFile(path.join(__dirname, './view/index.html'))
   // })
 }
+
 app.listen(PORT, () => {
   console.log('Server is listening on port ' + PORT)
 })
+
